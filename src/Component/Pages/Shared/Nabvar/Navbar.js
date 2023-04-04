@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink,  } from 'react-router-dom';
 import lgo from '../../../../Images/Vector.png'
 const Navbar = () => {
     const menuItems = <React.Fragment>
        
-            <li className='mx-6'><Link to='/'>Home</Link></li>
-            <li className='mx-6'><Link to='/'>Our Offerings</Link></li>
-            <li className='mx-6'><Link to='/'>Our Team</Link></li>
-            <li className='mx-6'><Link to='/'>Contact Us</Link></li>
-            <li className='mx-6'><Link to='/'>Blogs</Link></li>
+            <li className='mx-6'><NavLink exact to='/'activeClassName="active" >Home</NavLink></li>
+            <li className='mx-6'><NavLink exact activeClassName="active" to='/about'>Our Offerings</NavLink></li>
+            <li className='mx-6'><NavLink exact activeClassName="active" to='/about'>Our Team</NavLink></li>
+            <li className='mx-6'><NavLink exact  activeClassName="active"to='/about'>Contact Us</NavLink></li>
+            <li className='mx-6'><NavLink exact activeClassName="active" to='/about'>Blogs</NavLink></li>
        
 
     </React.Fragment>
@@ -21,8 +21,6 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 3</a></li>
                         </ul>
                     </div>
                     <Link className=' w-14'><img src={lgo} alt="" /></Link>

@@ -1,33 +1,6 @@
-.filed-group{
-    position: relative;
-}
-.input-filed{
-    transition: 0.3s ease;
-    /* background-color: white; */
-}
-.input-label{
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 10px;
-    padding: 5px;
-    transition: 0.3s ease;
-    /* background-color: white; */
-}
 
-.input-filed::placeholder{
-    color: transparent;
-}
-.input-filed:placeholder-shown ~ .input-label{
-    font-size: 14px;
-    top: 6px;
-    
-}
-.input-filed:focus ~ .input-label{
-    display: block;
-    position: absolute;
-    top: -14px;
-    padding: 5px;
-    font-size:14px;
-    background-color: white;
-}
+.form-control {
+    /* background-color: rgb(253, 214, 214) !important; */
+    height:1em !important;
+    width: 100% !important;
+  }
