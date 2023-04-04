@@ -57,12 +57,12 @@ const Offers = () => {
                 </div>
                 <div className='grid grid-cols-3 gap-5 mb-6'>
                     {
-                        offers.map(offer => <div className='flex items-center bg-accent py-4 px-4 hover:bg-info hover:border-black hover:border-b-4'>
+                        offers.map(offer => <Link className='flex items-center bg-accent py-4 px-4 hover:bg-info hover:border-black hover:border-b-4'>
                             <div className=' text-black items-center flex w-3/5 mx-auto'>
                                 <span className='bg-white text-center px-4 py-2 rounded-full mr-5 font-semibold'>{offer.nmbr}</span>
                                 <p>{offer.name}</p>
                             </div>
-                        </div>)
+                        </Link>)
                     }
                 </div>
                 <div className='grid grid-cols-3 gap-8 '>

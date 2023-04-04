@@ -41,7 +41,7 @@ const Blogs = () => {
                 </div>
                 <div className='grid grid-cols-3 gap-8 mt-6'>
                     {
-                        blogs.map(blog => <div className='shadow-xl rounded-lg p-6 relative'>
+                        blogs.map(blog => <div className='shadow-2xl rounded-lg p-6 relative'>
                             <div >
                                 <img className='rounded' src={blog.img} alt="" />
                             </div>

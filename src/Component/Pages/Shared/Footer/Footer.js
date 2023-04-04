@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineLinkedin, AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
-import { FiTwitter } from "react-icons/fi";
+import { FiTwitter, FiPhoneCall } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 import lgo from '../../../../Images/logo.png'
 
 const Footer = () => {
     return (
-        <div className='bg-primary'>
-            <div className='flex'>
-                <div>
+        <div className='bg-primary px-8'>
+            <div className='flex py-10'>
+                <div className='w-1/4'>
                     <img src={lgo} alt="" />
                 </div>
-                <div>
+                <div className='w-1/4'>
                     <p className='text-white font-bold text-lg'>Company</p>
                     <ul className='text-white text-sm leading-8'>
                         <li><Link>Home</Link></li>
@@ -20,16 +21,35 @@ const Footer = () => {
                         <li><Link>Contact Us</Link></li>
                     </ul>
                 </div>
-                <div>
-                    <p className='text-white font-bold text-lg'>Company</p>
+                <div className='w-1/4'>
+                    <p className='text-white font-bold text-lg'>Useful Link</p>
                     <ul className='text-white text-sm leading-8'>
                         <li><Link>Blogs</Link></li>
                         <li><Link>FAQ's</Link></li>
                     </ul>
                 </div>
-                <div></div>
+                <div className='text-white w-1/4'>
+                    <div className='flex items-center mb-4'>
+                        <div className='text-4xl font-bold mr-4'>
+                            <HiOutlineMail></HiOutlineMail>
+                        </div>
+                        <div>
+                            <p className='font-bold'>Email:</p>
+                            <p className='text-sm'>support@inreglobal.com</p>
+                        </div>
+                    </div>
+                    <div className='flex items-center'>
+                        <div className='text-4xl font-bold mr-4'>
+                            <FiPhoneCall></FiPhoneCall>
+                        </div>
+                        <div>
+                            <p className='font-bold'>Phone:</p>
+                            <p className='text-sm'>+91 | 7019305889</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className='flex justify-between py-4 px-12'>
+            <div className='flex justify-between py-4'>
                 <div><p className='text-white text-sm font-semibold'>Copyright 2023. Designed by INRE Global</p></div>
                 <div>
                     <ul className='flex'>

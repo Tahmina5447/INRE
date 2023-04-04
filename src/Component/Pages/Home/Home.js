@@ -4,6 +4,7 @@ import About from './About/About';
 import Offers from './Offers/Offers';
 import TeamMember from './TeamMember/TeamMember';
 import Blogs from './Blogs/Blogs';
+import Contact from './Contact/Contact';
 
 const Home = () => {
     return (
@@ -12,7 +13,8 @@ const Home = () => {
             <About></About>
             <Offers></Offers>
             <TeamMember></TeamMember>
-            <Blogs className='bg-red-600'></Blogs>
+            <Blogs></Blogs>
+            <Contact></Contact>
         </div>
     );
 };
