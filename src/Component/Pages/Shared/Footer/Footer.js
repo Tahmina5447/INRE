@@ -25,6 +25,7 @@ const Footer = () => {
                     <ul className='text-white text-sm leading-8'>
                         <li><Link>Blogs</Link></li>
                         <li><Link>FAQ's</Link></li>
+                        <li><Link>FAQ's</Link></li>
                     </ul>
                 </div>
                 <div></div>
